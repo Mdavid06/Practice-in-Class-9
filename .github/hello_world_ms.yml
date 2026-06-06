@@ -1,0 +1,24 @@
+name: Hello World Moises
+
+on:
+  push:
+    branches:
+      - main
+      - hello-world-ms
+
+  workflow_dispatch:
+
+jobs:
+  hello1:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hello World 1
+        run: echo "Hello World 1"
+
+  hello2:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hello World 2
+        run: echo "Hello World 2"
